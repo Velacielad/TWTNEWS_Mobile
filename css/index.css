@@ -1,0 +1,63 @@
+body{
+  margin:0px;
+  padding: 0px;
+  border: 0px;
+  font-family: "微软雅黑" !IMPORTANT;
+  background-color: #EBEBEB;
+}
+button{
+  font-family: "微软雅黑" !IMPORTANT;
+  color:#fff !IMPORTANT;
+  font-size: 17px !IMPORTANT;
+}
+.clear{
+  clear: both;
+}
+.act-news{
+
+}
+.detail{
+  width: 1400px;
+  min-height: none;
+}
+.mdl-card{
+  width: auto;
+  min-height: 100px;
+}
+.mdl-button{
+  font-family: "微软雅黑";
+}
+.actnews-title{
+  height: 176px;
+  background: url('../imgs/actnews.jpg') center / cover;
+}
+.news1-title{
+  height: 176px;
+  background: url('../imgs/news1.jpg') center / cover;
+}
+.mdl-card__title-text{
+  font-family: "微软雅黑";
+  color:#fff;
+  font-weight: 400;
+}
+.none-top{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.mdl-card__supporting-text{
+  border-top: 1px solid rgba(0,0,0,.1);
+  width: auto;
+}
+  .mdl-layout__header{
+    background-color: #F44336;
+
+  }
+  .mdl-layout-title{
+    font-family: "微软雅黑";
+  }
+  .mdl-navigation__link{
+    font-size: 17px;
+  }
+  .mdl-grid{
+    max-width: 1400px;
+  }
