@@ -4,205 +4,344 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>社团联首页</title>
+	<title>天外天新闻网</title>
 
-  <link rel="stylesheet" href="./material-design-lite/material.min.css">
+  <link rel="stylesheet" href="./css/material.min.css">
   <script src="./js/material.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href='./css/index.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <!-- Always shows a header, even in smaller screens. -->
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">社团联合会</span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation. We hide it in small screens. -->
-        <nav class="mdl-navigation mdl-layout--large-screen-only">
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
-            首页
-          </button>
-          <button id="shetuanjianjie" class="mdl-button mdl-js-button mdl-js-ripple-effect">
-            社团联简介
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect" for="shetuanjianjie">
-            <li class="mdl-menu__item">社团简介</li>
-            <li class="mdl-menu__item">部门介绍</li>
-            <li class="mdl-menu__item">特色活动</li>
-            <li class="mdl-menu__item">加入我们</li>
-          </ul>
-          <button id="tiandashetuan" class="mdl-button mdl-js-button mdl-js-ripple-effect">
-            天大社团
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect" for="tiandashetuan">
-            <li class="mdl-menu__item">学生组织</li>
-            <li class="mdl-menu__item">职能类社团</li>
-            <li class="mdl-menu__item">体育类社团</li>
-            <li class="mdl-menu__item">兴趣类社团</li>
-          </ul>
-          <button id="shelianfuwu" class="mdl-button mdl-js-button mdl-js-ripple-effect">
-            社联服务
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect" for="shelianfuwu">
-            <li class="mdl-menu__item">教室审批</li>
-            <li class="mdl-menu__item">场地审批</li>
-            <li class="mdl-menu__item">活动审批</li>
-            <li class="mdl-menu__item">社团注册</li>
-          </ul>
-          <button id="shetuanjianjie" class="mdl-button mdl-js-button mdl-js-ripple-effect">
-            新建社团
-          </button>
-          <button id="shetuanjianjie" class="mdl-button mdl-js-button mdl-js-ripple-effect">
-            登录
-          </button>
-          <button id="shetuanjianjie" class="mdl-button mdl-js-button mdl-js-ripple-effect">
-            注册
-          </button>
-        </nav>
-      </div>
-    </header>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">导航</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">登录</a>
-        <a class="mdl-navigation__link" href="">注册</a>
-        <a class="mdl-navigation__link" href="">新建社团</a>
-      </nav>
-    </div>
-    <main class="mdl-layout__content">
-      <div class="page-content">
-        <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--3-col mdl-shadow--1dp act-news">
-            <div class="demo-card-wide mdl-card actnews">
-              <div class="mdl-card__title actnews-title">
-                <h2 class="mdl-card__title-text">活动新闻</h2>
-              </div>
-              <div class="mdl-card__supporting-text">
-                【身边的创客】撸啊撸串吧团队：我们只想做这样一件事
-              </div>
-              <div class="mdl-card__supporting-text">
-                遨游文献海洋：Note Express文献管理与论文写作讲座
-              </div>
-              <div class="mdl-card__supporting-text">
-                规划启航 成就梦想：中建西南院高管职业生涯分享报告会
-              </div>
-              <div class="mdl-card__supporting-text">
-                中国梦 民盟情：天津市民盟市委会文艺晚会
-              </div>
-              <div class="mdl-card__supporting-text">
-                天津大学2015-2016年度五四红旗示范团支部创建启动仪式成功举行
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="color:#F44336;">
-                  查看更多
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-cell mdl-cell--9-col">
-            <div class="mdl-grid none-top">
+	<!-- Simple header with fixed tabs. -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+	            mdl-layout--fixed-tabs">
+	  <header class="mdl-layout__header">
+	    <div class="mdl-layout__header-row">
+	      <!-- Title -->
+	      <span class="mdl-layout-title">天外天新闻网</span>
+	    </div>
+	    <!-- Tabs -->
+	    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+	      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">天大要闻</a>
+	      <a href="#fixed-tab-2" class="mdl-layout__tab">校园公告</a>
+				<a href="#fixed-tab-3" class="mdl-layout__tab">视点观察</a>
+				<a href="#fixed-tab-4" class="mdl-layout__tab">社团风采</a>
+	      <a href="#fixed-tab-5" class="mdl-layout__tab">院系动态</a>
+	    </div>
+	  </header>
+	  <div class="mdl-layout__drawer">
+	    <span class="mdl-layout-title">登录</span>
+			<nav class="mdl-navigation">
+				<form action="#" class="login-form">
+				  <div class="mdl-textfield mdl-js-textfield">
+				    <input class="mdl-textfield__input" type="text" id="sample1">
+				    <label class="mdl-textfield__label" for="sample1">天外天账号</label>
+				  </div>
+					<div class="mdl-textfield mdl-js-textfield">
+						<input class="mdl-textfield__input" type="password" id="sample1">
+						<label class="mdl-textfield__label" for="sample1">密码</label>
+					</div>
+					<button class="mdl-button mdl-js-button mdl-js-ripple-effect login-button">
+					  登录
+					</button>
+				</form>
+    	</nav>
+	  </div>
+	  <main class="mdl-layout__content">
+	    <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+	      <div class="page-content">
+					<div class="mdl-grid">
+						<!--new card-->
+					  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+							<div class="demo-card-square mdl-card mdl-shadow--2dp">
+							  <div class="mdl-card__title mdl-card--expand">
+									<img src="imgs/topnews.jpg" style="width:100%;">
+							    <h2 class="mdl-card__title-text">Update</h2>
+							  </div>
+							  <div class="mdl-card__supporting-text">
+							    观万象化成，思古今之变。论求是真言，传经世之道。11月1日14时，由长安福特汽车有限公司、汽车族杂志社等主办...
+							  </div>
+							  <div class="mdl-card__actions mdl-card--border">
+							    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+							      查看更多
+							    </a>
+							  </div>
+							</div>
+						</div>
 
-              <div class="mdl-cell mdl-cell--4-col none-top">
-                <div class="demo-card-square mdl-card mdl-shadow--1dp">
-                  <div class="mdl-card__title mdl-card--expand news1-title">
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                    每个人的大学生活都有多种方向与可能。有人醉心学术，欲登学之极巅；有人专心社团，欲练社交...
-                  </div>
-                  <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                      More
-                    </a>
-                  </div>
-                </div>
-              </div>
+					  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="news-img">
+									<img src="imgs/news1.jpg">
+									<div class="news-text">
+										<div class="news-card-title">
+											【身边的创客】撸啊撸串吧团队：我们只想做这样一...
+										</div>
+										<div class="news-card-date">
+											2015-11-04
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-              <div class="mdl-cell mdl-cell--4-col none-top">
-                <div class="demo-card-square mdl-card mdl-shadow--1dp">
-                  <div class="mdl-card__title mdl-card--expand news1-title">
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                    每个人的大学生活都有多种方向与可能。有人醉心学术，欲登学之极巅；有人专心社团，欲练社交...
-                  </div>
-                  <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                      More
-                    </a>
-                  </div>
-                </div>
-              </div>
+					  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="news-img">
+									<img src="imgs/news1.jpg">
+									<div class="news-text">
+										<div class="news-card-title">
+											【身边的创客】撸啊撸串吧团队：我们只想做这样一...
+										</div>
+										<div class="news-card-date">
+											2015-11-04
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-              <div class="mdl-cell mdl-cell--4-col none-top">
-                <div class="demo-card-square mdl-card mdl-shadow--1dp">
-                  <div class="mdl-card__title mdl-card--expand news1-title">
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                    每个人的大学生活都有多种方向与可能。有人醉心学术，欲登学之极巅；有人专心社团，欲练社交...
-                  </div>
-                  <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                      More
-                    </a>
-                  </div>
-                </div>
-              </div>
+					</div>
+				</div>
+	    </section>
 
-            </div>
-            <div class="mdl-grid none-top">
+	    <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+	      <div class="page-content">
 
-              <div class="mdl-cell mdl-cell--4-col none-top">
-                <div class="demo-card-square mdl-card mdl-shadow--1dp">
-                  <div class="mdl-card__title mdl-card--expand news1-title">
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                    每个人的大学生活都有多种方向与可能。有人醉心学术，欲登学之极巅；有人专心社团，欲练社交...
-                  </div>
-                  <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                      More
-                    </a>
-                  </div>
-                </div>
-              </div>
+					<div class="mdl-grid">
+						<!--new card-->
+					  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+							<div class="demo-card-square mdl-card mdl-shadow--2dp">
+							  <div class="mdl-card__title mdl-card--expand">
+									<img src="imgs/topnews.jpg" style="width:100%;">
+							    <h2 class="mdl-card__title-text">Update</h2>
+							  </div>
+							  <div class="mdl-card__supporting-text">
+							    2观万象化成，思古今之变。论求是真言，传经世之道。11月1日14时，由长安福特汽车有限公司、汽车族杂志社等主办...
+							  </div>
+							  <div class="mdl-card__actions mdl-card--border">
+							    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+							      查看更多
+							    </a>
+							  </div>
+							</div>
+						</div>
 
-              <div class="mdl-cell mdl-cell--4-col none-top">
-                <div class="demo-card-square mdl-card mdl-shadow--1dp">
-                  <div class="mdl-card__title mdl-card--expand news1-title">
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                    每个人的大学生活都有多种方向与可能。有人醉心学术，欲登学之极巅；有人专心社团，欲练社交...
-                  </div>
-                  <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                      More
-                    </a>
-                  </div>
-                </div>
-              </div>
+					  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="news-img">
+									<img src="imgs/news1.jpg">
+									<div class="news-text">
+										<div class="news-card-title">
+											【身边的创客】撸啊撸串吧团队：我们只想做这样一...
+										</div>
+										<div class="news-card-date">
+											2015-11-04
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-              <div class="mdl-cell mdl-cell--4-col none-top">
-                <div class="demo-card-square mdl-card mdl-shadow--1dp">
-                  <div class="mdl-card__title mdl-card--expand news1-title">
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                    每个人的大学生活都有多种方向与可能。有人醉心学术，欲登学之极巅；有人专心社团，欲练社交...
-                  </div>
-                  <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                      More
-                    </a>
-                  </div>
-                </div>
-              </div>
+					  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="news-img">
+									<img src="imgs/news1.jpg">
+									<div class="news-text">
+										<div class="news-card-title">
+											【身边的创客】撸啊撸串吧团队：我们只想做这样一...
+										</div>
+										<div class="news-card-date">
+											2015-11-04
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-  </div>
+					</div>
+
+				</div>
+	    </section>
+
+	    <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+	      <div class="page-content">
+
+					<div class="mdl-grid">
+						<!--new card-->
+					  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+							<div class="demo-card-square mdl-card mdl-shadow--2dp">
+							  <div class="mdl-card__title mdl-card--expand">
+									<img src="imgs/topnews.jpg" style="width:100%;">
+							    <h2 class="mdl-card__title-text">Update</h2>
+							  </div>
+							  <div class="mdl-card__supporting-text">
+							    3观万象化成，思古今之变。论求是真言，传经世之道。11月1日14时，由长安福特汽车有限公司、汽车族杂志社等主办...
+							  </div>
+							  <div class="mdl-card__actions mdl-card--border">
+							    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+							      查看更多
+							    </a>
+							  </div>
+							</div>
+						</div>
+
+					  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="news-img">
+									<img src="imgs/news1.jpg">
+									<div class="news-text">
+										<div class="news-card-title">
+											【身边的创客】撸啊撸串吧团队：我们只想做这样一...
+										</div>
+										<div class="news-card-date">
+											2015-11-04
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					  <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="news-img">
+									<img src="imgs/news1.jpg">
+									<div class="news-text">
+										<div class="news-card-title">
+											【身边的创客】撸啊撸串吧团队：我们只想做这样一...
+										</div>
+										<div class="news-card-date">
+											2015-11-04
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+	    </section>
+
+			<section class="mdl-layout__tab-panel" id="fixed-tab-4">
+				<div class="page-content">
+
+					<div class="mdl-grid">
+						<!--new card-->
+						<div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+							<div class="demo-card-square mdl-card mdl-shadow--2dp">
+								<div class="mdl-card__title mdl-card--expand">
+									<img src="imgs/topnews.jpg" style="width:100%;">
+									<h2 class="mdl-card__title-text">Update</h2>
+								</div>
+								<div class="mdl-card__supporting-text">
+									4观万象化成，思古今之变。论求是真言，传经世之道。11月1日14时，由长安福特汽车有限公司、汽车族杂志社等主办...
+								</div>
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+										查看更多
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="news-img">
+									<img src="imgs/news1.jpg">
+									<div class="news-text">
+										<div class="news-card-title">
+											【身边的创客】撸啊撸串吧团队：我们只想做这样一...
+										</div>
+										<div class="news-card-date">
+											2015-11-04
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="news-img">
+									<img src="imgs/news1.jpg">
+									<div class="news-text">
+										<div class="news-card-title">
+											【身边的创客】撸啊撸串吧团队：我们只想做这样一...
+										</div>
+										<div class="news-card-date">
+											2015-11-04
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section class="mdl-layout__tab-panel" id="fixed-tab-5">
+				<div class="page-content">
+
+					<div class="mdl-grid">
+						<!--new card-->
+						<div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+							<div class="demo-card-square mdl-card mdl-shadow--2dp">
+								<div class="mdl-card__title mdl-card--expand">
+									<img src="imgs/topnews.jpg" style="width:100%;">
+									<h2 class="mdl-card__title-text">Update</h2>
+								</div>
+								<div class="mdl-card__supporting-text">
+									5观万象化成，思古今之变。论求是真言，传经世之道。11月1日14时，由长安福特汽车有限公司、汽车族杂志社等主办...
+								</div>
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+										查看更多
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="news-img">
+									<img src="imgs/news1.jpg">
+									<div class="news-text">
+										<div class="news-card-title">
+											【身边的创客】撸啊撸串吧团队：我们只想做这样一...
+										</div>
+										<div class="news-card-date">
+											2015-11-04
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+								<div class="news-img">
+									<img src="imgs/news1.jpg">
+									<div class="news-text">
+										<div class="news-card-title">
+											【身边的创客】撸啊撸串吧团队：我们只想做这样一件事
+										</div>
+										<div class="news-card-date">
+											2015-11-04
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+	  </main>
+	</div>
 </body>
 </html>

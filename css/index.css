@@ -22,7 +22,7 @@ button{
 }
 .mdl-card{
   width: auto;
-  min-height: 100px;
+  min-height: 50px;
 }
 .mdl-button{
   font-family: "微软雅黑";
@@ -40,24 +40,58 @@ button{
   color:#fff;
   font-weight: 400;
 }
-.none-top{
-  margin-top: 0px;
-  padding-top: 0px;
+.login-form{
+  margin-left: 16px;
+  margin-right: 16px;
 }
+.login-button{
+  background-color: #2196F3;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.news-img{
+  max-width: 100%;
+  float: left;
+}
+.news-img img{
+  max-width: 40%;
+  float: left;
+}
+.news-img .news-text{
+  width: 60%;
+  float: left;
+}
+
+.news-title{
+  float: left;
+  max-width: 60%;
+}
+
+.news-card-title{
+  margin: 5px;
+  font-size: 15px;
+  color:#212121;
+}
+.news-card-date{
+  margin: 5px;
+  font-size: 10px;
+  color: #9B9B9B;
+}
+
+
 .mdl-card__supporting-text{
   border-top: 1px solid rgba(0,0,0,.1);
   width: auto;
 }
-  .mdl-layout__header{
-    background-color: #F44336;
-
+  .mdl-layout__header,
+  .mdl-layout__tab-bar{
+    background-color: #2196F3;
   }
+
   .mdl-layout-title{
     font-family: "微软雅黑";
   }
-  .mdl-navigation__link{
-    font-size: 17px;
-  }
-  .mdl-grid{
-    max-width: 1400px;
-  }
+  .mdl-textfield__label:after {
+      background-color: #2196F3;
+    }
