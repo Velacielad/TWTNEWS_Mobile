@@ -99,3 +99,15 @@ button{
     background-color: #2196F3;
     color: #fff;
   }
+  .mdl-layout--fixed-tabs .mdl-layout__tab {
+    float: left;
+    -webkit-box-flex: 1;
+    Unknown property name.-webkit-flex-grow: 1;
+    Unknown property name.-ms-flex-positive: 1;
+    Unknown property name.flex-grow: 1;
+    padding: 0;
+    width: 20%;
+}
+  .mdl-layout--fixed-header > .mdl-layout__header{
+    display: block;
+  }
