@@ -10,6 +10,10 @@ button{
   color:#fff !IMPORTANT;
   font-size: 17px !IMPORTANT;
 }
+h1,h2,h3,h4,h5{
+  font-family: "微软雅黑" !IMPORTANT;
+  color: #212121;
+}
 .clear{
   clear: both;
 }
@@ -110,4 +114,10 @@ button{
 }
   .mdl-layout--fixed-header > .mdl-layout__header{
     display: block;
+  }
+  .mdl-layout__header-row{
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
   }
