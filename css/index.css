@@ -95,3 +95,7 @@ button{
   .mdl-textfield__label:after {
       background-color: #2196F3;
     }
+  .mdl-button.mdl-button--colored{
+    background-color: #2196F3;
+    color: #fff;
+  }
