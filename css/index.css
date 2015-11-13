@@ -124,3 +124,8 @@ h5, h6 {
     -ms-flex-align: stretch;
     align-items: stretch;
   }
+
+  .mdl-badge[data-badge]:after{
+    top:14px;
+    right:24px;
+  }
