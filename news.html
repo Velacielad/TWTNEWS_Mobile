@@ -6,8 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>首页-天外天新闻网</title>
 
-  <link rel="stylesheet" href="./css/material.min.css">
-  <script src="./js/material.min.js"></script>
+	<link rel="stylesheet" href="./css/material.min.css">
+  <link rel="stylesheet" href="./css/sweetalert.css">
+	<script src="./js/material.min.js"></script>
+  <script src="./js/sweetalert.min.js"></script>
   <link href='./css/index.css' rel='stylesheet' type='text/css'>
   <link href='./css/news.css' rel='stylesheet' type='text/css'>
 	<!--[if IE]>
@@ -118,7 +120,7 @@
 						    <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
 						    <label class="mdl-textfield__label" for="sample5">请在此输入评论</label>
 						  </div>
-							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="background-color:#2196F3;">
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="comment-botton"style="background-color:#2196F3;">
 							  发送评论
 							</button>
 						</form>
@@ -129,5 +131,15 @@
 
 	  </main>
 	</div>
+
+	<!-- script -->
+	<script>
+	document.querySelector('#comment-botton').onclick = function(){
+		swal("评论成功", "", "success");
+	};
+	// document.querySelector('#comment-botton').onclick = function(){
+	// 	swal("评论失败", "您还未登录天外天账号", "error");
+	// };
+	</script>
 </body>
 </html>
