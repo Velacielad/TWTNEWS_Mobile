@@ -1,5 +1,8 @@
-.mdl-layout__header{
+﻿.mdl-layout__header{
   box-shadow: none;
+}
+a{
+	color:#424242 !IMPORTANT;
 }
 .demo-ribbon {
     width: 100%;
@@ -10,7 +13,7 @@
     flex-shrink: 0;
 }
 .main-news{
-  margin-top: -35vh;
+  margin-top: -300px;
 }
 .demo-content {
     padding: 40px 28px;
@@ -24,9 +27,13 @@ h5{
 }
 p{
   font-size: 16px;
+
+  margin-bottom: 0px !IMPORTANT;
 }
 p img{
   width: 100%;
+  max-width: 100%;
+  height: auto !important;
 }
 .comment-title{
   font-size: 20px;
@@ -40,7 +47,9 @@ p img{
 }
 .comment-detail{
   color: #9e9e9e;
-
+}
+.mdl-layout__content{
+  width: 100% !important;
 }
 .mdl-textfield__label,
 .mdl-textfield__input{
@@ -52,4 +61,7 @@ p img{
 }
 .sweet-alert{
   font-family: "微软雅黑" !IMPORTANT;
+}
+.mdl-textfield__label:after {
+     bottom: 20px;
 }
